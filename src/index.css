@@ -1,13 +1,57 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+li {
+    padding: 5px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+main {
+    background-color: #f7f8f8;
+}
+
+.header {
+    transition: ease-in-out;
+    transition-duration: 1s;
+}
+
+.header__prop {
+    /* background-color: #1F2937; */
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+}
+
+.mobileNavigatio {
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+}
+
+.aboutUs {
+    background-image: url(./assets/circuit.svg);
+}
+
+.ui img {
+    border-radius: 5%;
+}
+
+.hamburger__close {
+    transition: all 0.2s;
+}
+
+#passion {
+    font-family: 'Quicksand', sans-serif;
+}
+
+#apropos {
+    font-family: 'Leckerli One', cursive;
+}
+
+#hr {
+    min-width: 100%;
+}
+
+@media only screen and (min-width: 1135px) {
+    #ligne {
+        width: 100px;
+    }
 }
